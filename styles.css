@@ -1,0 +1,52 @@
+/* Custom styles */
+body {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode .bg-light {
+    background-color: #444 !important;
+}
+
+.dark-mode .card {
+    background-color: #555;
+    color: #fff;
+}
+
+.card {
+    min-height: 250px;
+    border-radius: 0;
+}
+
+#about img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.btn:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s;
+}
+
+nav a {
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ccc !important;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+    }
+    .ms-auto {
+        margin-top: 10px;
+    }
+}
